@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+	text-decoration: none;
+	color: #777777;
+}
+
+a:hover {
+	text-decoration: none;
+	color: orangered;
+	filter: invert(100%);
+}
+
+body {
+	background-image: url(../images/tree_bark.png);
+}
+
+h1 {
+	font-family: "Georgia", Times, Times New Roman, serif;
+	color: white;
+	margin-top: 30px;
+}
+
+h2 {
+	font-family: "Georgia", Times, Times New Roman, serif;
+	color: #4aaaa5;
+}
+
+h3 {
+	font-family: "Georgia", Times, Times New Roman, serif;
+	color: #4aaaa5;
+}
+
+hr {
+	border: none;
+	height: 5px;
+	background: #dddddd
+}
+/* Name Header To Be 225x80 */
+/* Padding to be 475px on name header */
+
+.header {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+}
+
+.headerContent {
+	width: 960px;
+	margin: auto;
+}
+
+.nameHeader {
+	background-color: #4aaaa5;
+	margin-top: 0px;
+	width: 225px;
+	height: 100px;
+	float: left;
+}
+
+.navBar {
+	margin-top: 0px;
+	width: 300px;
+	height: 100px;
+	float: right;
+}
+
+.thisPage {
+	text-decoration: none;
+	color: orangered;
+}
+
+.navText {
+	padding: 24px;
+	color: #777777;
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;;
+}
+
+.parentDIV1 { 
+	margin: auto;
+	width: 960px;
+	height: auto;
+}
+
+.aboutMe {
+	border-style: solid;
+	border-width:  1px;
+	border-color: #dddddd;
+	background-color: white;
+	padding: 10px;
+	width: 640px;
+	float: left;
+}
+
+.picDiv {
+	float: left;
+}
+
+.connectMe {
+	border-style: solid;
+	border-width:  1px;
+	border-color: #dddddd;
+	padding: 10px;
+	background-color: white;
+	width: 270px;
+	float: right;
+}
+
+.myimage {
+	position: relative;
+	padding: 10px;
+	width: 200px;
+	float: left;
+	z-index: 2;
+	clear: both;
+}
+
+.captionText {
+	position: absolute;
+	height: 50px;
+	width: 270px;
+	margin-top: 160px;
+	margin-left: 25px;
+	text-align: center;
+	float: left;
+	z-index: 1;
+	background-color: #4aaaa6;
+	font-family: "Georgia", Times, Times New Roman, serif;
+	padding-top: 10px;
+	font-size: 30px;
+	color: white;
+}
+
+.shortBio {
+	color: #777777;
+	font-weight: normal;
+	letter-spacing: 1px;
+	align: left;
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.icon {
+	padding: 5px;
+	height: 64px;
+	width: 64px;
+}
+
+.portPic {
+	width: 270px;
+	height: 200px;
+	padding: 25px;
+	float: left;
+	/* Caption Margin Bottom: 10px */
+	/* Caption Size: 80px High */
+}
+
+.footer {
+	float: right;
+	position: relative;
+	margin-top: 235px;
+	height: 100px;
+	width: 100%;
+	background-color: #666666;
+	border-top-style: solid;
+	border-top-width: 10px;
+	border-top-color: #4aaaa6;
+}
+
+.footerText {
+	color: #999999;
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	margin-top: 40px;
+	font-size: 12px;
+}
+
+/*!!!!!Media Queries!!!!!*/
+/*960 pixels*/
+@media screen and (max-width: 960px) {
+	.wrapper {
+		width: 960px;
+	}
+	.connectMe {
+		border-style: solid;
+		border-width:  1px;
+		border-color: #dddddd;
+		padding: 10px;
+		margin-top: 10px;
+		background-color: white;
+		width: 320px;
+		clear: both;
+		float: left;
+	}
+	
+	.aboutMe {
+		width: 600px;
+		clear: both;
+	}
+	
+	.navText {
+/*		width: 100px;*/
+		clear: both;
+		float: left;
+		margin-top: 12px;
+		margin-left: -50px;
+	}
+	
+	.header {
+		cleat: both;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		height: 100px;
+		width: 600px;
+		background-color: white;
+		border-bottom-style: solid;
+		border-bottom-color: #cccccc;
+	}
+	
+	.navBar {
+		clear: both;
+		margin-top: 0px;
+		width: 960px;
+		height: 100px;
+		position: absolute;
+		left: 400px;
+	}
+	
+	.footer {
+		clear: both;
+		float: left;
+		width: 100%;
+		margin-top: 30px;
+		padding-left: 10px;
+	}
+	
+	.footerText {
+		padding-right: 30px;
+	}
+	
+/*	768 pixels*/
+	@media screen and (max-width: 768px) {
+	.wrapper {
+		width: 768px;
+	}
+	.connectMe {
+		border-style: solid;
+		border-width:  1px;
+		border-color: #dddddd;
+		padding: 10px;
+		margin-top: 10px;
+		background-color: white;
+		width: 320px;
+		clear: both;
+		float: left;
+	}
+	
+		.portPic {
+			float: right;
+		}
+	
+	.aboutMe {
+		width: 320px;
+		clear: both;
+	}
+	
+	.navText {
+		width: 100px;
+		clear: both;
+		float: left;
+		margin-top: -3px;
+		margin-left: -180px;
+	}
+	
+	.header {
+		cleat: both;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		height: 100px;
+		width: 342px;
+		background-color: white;
+		border-bottom-style: solid;
+		border-bottom-color: #cccccc;
+	}
+	
+	.navBar {
+		clear: both;
+		margin-top: 0px;
+		width: 320px;
+		height: 100px;
+		position: absolute;
+		left: 400px;
+	}
+	
+	.footer {
+		clear: both;
+		float: left;
+		margin-top: 30px;
+		padding-left: 10px;
+	}
+	
+	.footerText {
+		padding-right: 30px;
+	}
+
+/*600 Pixels*/
+@media screen and (max-width: 600px) {
+	.wrapper {
+		width: 600px;
+	}
+	.connectMe {
+		border-style: solid;
+		border-width:  1px;
+		border-color: #dddddd;
+		padding: 10px;
+		margin-top: 10px;
+		background-color: white;
+		width: 600px;
+		clear: both;
+		float: left;
+	}
+	
+	.aboutMe {
+		width: 600px;
+		clear: both;
+	}
+	
+	.navText {
+		width: 100px;
+		clear: both;
+		float: left;
+		margin-top: -3px;
+		margin-left: -180px;
+	}
+	
+	.header {
+		cleat: both;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		height: 100px;
+		width: 342px;
+		background-color: white;
+		border-bottom-style: solid;
+		border-bottom-color: #cccccc;
+	}
+	
+	.navBar {
+		clear: both;
+		margin-top: 0px;
+		width: 320px;
+		height: 100px;
+		position: absolute;
+		left: 400px;
+	}
+	
+	.footer {
+		clear: both;
+		float: left;
+		margin-top: 30px;
+		padding-left: 10px;
+	}
+	
+	.footerText {
+		padding-right: 30px;
+	}
+}
